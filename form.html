@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form action="action_page.php" method="post">
+        <div>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" placeholder="firstname" required>
+    </div>
+    <br>
+    <div>
+        <label for="lastname">last Name:</label>
+        <input type="text" id="lastname" required placeholder="lastname" name="lastname">
+    </div>
+    <br>
+    <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" required placeholder="password" maxlength="12">
+    </div>
+    <br>
+    <div>
+        <label for="email">email</label>
+        <input type="email" id="email" placeholder="email" name="email">
+    </div>
+    <br>
+    <div>
+        <label for="phone">phone #:</label>
+        <input type="number" id="phone" placeholder="+2380235333666" name="phone">
+    </div>
+    <br>
+    <div>
+        <label for="bday">birthday:</label>
+        <input type="date" id="bday" placeholder="birthday" name="bday">
+    </div>
+    <br>
+    <div>
+        <label for="quality">quality:</label>
+        <input type="number" id="quality" name="quality" min="0" max="99">
+
+    </div>
+    <br>
+    <div>
+        <label for="title">title:</label>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title" value="Mr.">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+        <label for="PHD.">PHD.</label>
+        <input type="radio" id="PHD." name="title" value="PHD.">
+    </div>
+    <br>
+    <label for="payment">payment:</label>
+   <!-- <select name="payment" id="payment">
+        <option value="cash">cash</option>
+        <option value="card">card</option>
+        <option value="online">online</option>
+        <option value="transfer">transfer</option>
+        <option value="wire">wire</option>
+        <option value="cheque">cheque</option>
+        <option value="paypal">paypal</option>
+        <option value="stripe">stripe</option>
+        <option value="boleto">boleto</option>
+        <option value="giropay">giropay</option>
+        <option value="ideal">ideal</option>
+        <option value="eps">eps</option>
+        <option value="p24">p24</option>
+        <option value="przelewy24">przelewy24</option>
+        <option value="dotpay">dotpay</option>
+        <option value="payu">payu
+
+    </select> -->
+    <select name="payment" id="payment">
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="giftcard">giftcard</option>
+    </select>
+    <br>
+    <label for="subcribe">subcribe</label>
+    <input type="checkbox" id="subcribe" name="subcribe">
+    
+    <div>
+        <input type="reset">
+    </div>
+    <br>
+    <div>
+        <input type="submit">
+    </div>
+        
+    </form>
+</body>
+</html>
